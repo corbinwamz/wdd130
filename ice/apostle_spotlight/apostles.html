@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box {
+            max-width: 1200px;
+            text-align: center;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1em;
+            align-items: flex-end;
+        }
+
+        #box h1{
+            flex: 1 1 100%;
+        }
+
+        #box img {
+            border-radius: 50%;
+            width: 150px;
+            height:150px;
+            object-fit: cover;
+            object-position: 50% 0;
+            border: 5px solid white;
+        }
+
+        img#middle-image {
+            width: 200px;
+            height: 200px;
+        }
+
+        #apostle-box {
+            background-image: url('images/christus.webp');
+            background-position: 30% center;
+            max-width: 80%;
+            max-height: 80%;
+            border-radius: 30px;
+            border: 10px solid black;
+            margin: 0 auto;
+        }
+
+        h1,h2 {
+            color: #E8ECED;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        #twelve img {
+            border-radius: 50%;
+            width: 100px;
+            height:100px;
+            object-fit: cover;
+            object-position: 50% 0;
+            border: 5px solid white;
+            display: inline-block;
+        }
+
+        #twelve img:hover,#box img:hover {
+            filter: brightness(80%);
+            transition: filter 0.3s ease;
+
+        }
+
+        #twelve {
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            justify-items: center;
+            row-gap: .5em;
+            padding: 1em;
+            margin: 50px;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="apostle-box">
+        <div id="box">
+            <h1>First Presidency</h1>
+            <img src="images/oaks.webp" alt="">
+            <img id="middle-image"src="images/nelson.webp" alt="">
+            <img src="images/eyring.webp" alt="">
+        </div>
+        <h2>Quorum of the Twelve Apostles</h2>
+        <div id="twelve">
+            <img src="images/holland.webp" alt="">
+            <img src="images/uchtdorf.webp" alt="">
+            <img src="images/bednar.webp" alt="">
+            <img src="images/cook.webp" alt="">
+            <img src="images/christofferson.webp" alt="">
+            <img src="images/renlund.webp" alt="">
+            <img src="images/rasband.webp" alt="">
+            <img src="images/stevenson.webp" alt="">
+            <img src="images/renlund.webp" alt="">
+            <img src="images/gong.webp" alt="">
+            <img src="images/soares.webp" alt="">
+            <img src="images/kearon.webp" alt="">
+        </div>
+    </div>
+</body>
+</html>

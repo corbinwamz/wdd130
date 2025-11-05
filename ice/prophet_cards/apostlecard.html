@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box {
+            max-width: 1200px;
+            text-align: center;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1em;
+        }
+
+        #box h1{
+            flex: 1 1 100%;
+        }
+
+        #box img {
+            border-radius: 50%;
+            width: 300px;
+            object-fit: cover;
+            object-position: 50% 10%;
+            border: 5px solid white;
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+        <h1>
+            Flex Demo
+        </h1>
+        <img src="https://placehold.co/350x300" alt="">
+        <img src="https://placehold.co/350x300" alt="">
+        <img src="https://placehold.co/350x300" alt="">
+    </div>
+</body>
+</html>
